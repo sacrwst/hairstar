@@ -1,3 +1,4 @@
+import { CreatePost } from "components/pages/CreatePost";
 import { Mypage } from "components/pages/Mypage";
 import { Top } from "components/pages/Top";
 import { DefaultLayout } from "components/ui/layout/DefaultLayout";
@@ -21,6 +22,14 @@ function App() {
             element={
               <DefaultLayout>
                 <Mypage />
+              </DefaultLayout>
+            }
+          />
+          <Route
+            path="/create-post"
+            element={
+              <DefaultLayout>
+                <CreatePost />
               </DefaultLayout>
             }
           />

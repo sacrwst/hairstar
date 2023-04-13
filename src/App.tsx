@@ -1,6 +1,6 @@
 import { Mypage } from "components/pages/Mypage";
 import { Top } from "components/pages/Top";
-import { DefaultTemplate } from "components/templates/DefaultTemplate";
+import { DefaultLayout } from "components/ui/layout/DefaultLayout";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -11,17 +11,17 @@ function App() {
           <Route
             index
             element={
-              <DefaultTemplate>
+              <DefaultLayout>
                 <Top />
-              </DefaultTemplate>
+              </DefaultLayout>
             }
           />
           <Route
             path="/mypage"
             element={
-              <DefaultTemplate>
+              <DefaultLayout>
                 <Mypage />
-              </DefaultTemplate>
+              </DefaultLayout>
             }
           />
         </Routes>

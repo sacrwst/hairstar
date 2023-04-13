@@ -12,7 +12,7 @@ export const Mypage = () => {
         </div>
         <ul className="mt-6">
           <li>
-            <Link to={"/"} className="block">
+            <Link to={"/create-post"} className="block">
               募集を作成
             </Link>
           </li>
